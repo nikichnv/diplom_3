@@ -20,12 +20,12 @@ import pageobject.RegisterPage;
 import java.util.concurrent.TimeUnit;
 
 public class LoginTest{
-    public static String email = RandomStringUtils.randomAlphabetic(10) + "@yandex.ru";
-    public static String password = RandomStringUtils.randomNumeric(6);
-    public static String name = RandomStringUtils.randomAlphabetic(10);
-    public WebDriver webDriver;
-    public UserSteps userSteps;
-    public String accessToken;
+    private static String email = RandomStringUtils.randomAlphabetic(10) + "@yandex.ru";
+    private static String password = RandomStringUtils.randomNumeric(6);
+    private static String name = RandomStringUtils.randomAlphabetic(10);
+    private WebDriver webDriver;
+    private UserSteps userSteps;
+    private String accessToken;
     private Browser browser = new Browser();
 
     @Before

@@ -19,13 +19,13 @@ import pageobject.PersonalAreaPage;
 import java.util.concurrent.TimeUnit;
 
 public class LogoutTest{
-    public static String email = RandomStringUtils.randomAlphabetic(10) + "@yandex.ru";
-    public static String password = RandomStringUtils.randomNumeric(6);
-    public static String name = RandomStringUtils.randomAlphabetic(10);
+    private static String email = RandomStringUtils.randomAlphabetic(10) + "@yandex.ru";
+    private static String password = RandomStringUtils.randomNumeric(6);
+    private static String name = RandomStringUtils.randomAlphabetic(10);
     public WebDriver webDriver;
     private Browser browser = new Browser();
-    public UserSteps userSteps;
-    public String accessToken;
+    private UserSteps userSteps;
+    private String accessToken;
 
     @Before
     public void setUp() {

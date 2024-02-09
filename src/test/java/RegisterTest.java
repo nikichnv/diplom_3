@@ -16,10 +16,10 @@ import pageobject.RegisterPage;
 import java.util.concurrent.TimeUnit;
 
 public class RegisterTest{
-    public static String email = RandomStringUtils.randomAlphabetic(10) + "@yandex.ru";
-    public static String password = RandomStringUtils.randomNumeric(6);
-    public static String incorrectPassword = RandomStringUtils.randomNumeric(5); //генерирует пароль с 5 цифрами для теста с неправильным паролем
-    public static String name = RandomStringUtils.randomAlphabetic(10);
+    private static String email = RandomStringUtils.randomAlphabetic(10) + "@yandex.ru";
+    private static String password = RandomStringUtils.randomNumeric(6);
+    private static String incorrectPassword = RandomStringUtils.randomNumeric(5); //генерирует пароль с 5 цифрами для теста с неправильным паролем
+    private static String name = RandomStringUtils.randomAlphabetic(10);
     private WebDriver webDriver;
     private Browser browser = new Browser();
 
